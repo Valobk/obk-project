@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ /* Body begins */
+ body {
+    width: 100%;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    /* Body ends */
+
+ /* HEADER begins */
+ header {
+    display: flex;
+    gap: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color:#f1f8ef;
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid green;
+}
+
+ nav ul li {
+    list-style-type: none;
+    display: flex;
+    display: inline-block;
+}
+
+/* nav ul {
+    display: flex;
+    flex-direction: row;
+} */
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+   letter-spacing: 1px;
+    padding: 1rem;
+    font-weight: 700;
+    transition: 1s;
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+}
+
+nav ul .green a {
+    color: #38bd38;
+}
+
+.fa-bars {
+    color: white;
+    display: none;
+}
+/* HEADER ends */
+
+/* MAIN begins */
+/* Sect 1 */
+.sect1 {
+    background-color: #141431f5;
+    padding: 12rem;
+    height: 30rem;
+    text-align: center;
+}
+
+.sect1 h2 {
+    font-size: 35px;
+    color: white;
+    text-wrap: nowrap;
+    word-spacing: 0.7rem;
+}
+
+.sect1 p {
+    color: white;
+    padding: 0.2rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+}
+
+ .sect1 .div4 button {
+    height: 55px;
+    width: 180px;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    border-color: #ffffff2a;
+}
+
+.sect1 .div4 p a {
+    text-decoration: none;
+    color: white;
+}
+
+.sect1 .div4 .getstarted  {
+    background-color: #125f12;
+}
+
+.sect1 .div4 .login {
+    background-color: #05052cf5;
+}
+
+.sect1 .div4 .getstarted:hover {
+    background-color:#0d460d;
+    transition: 1s;
+}
+
+
+.sect1 .div4 .login:hover {
+    background-color:#010116f5;
+    transition: 1s;
+}
+
+.sect1 .div4 {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+/* Sect 2 */
+
+.sect2 {
+    background-color: #0a0a1bf5;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.sect2 img {
+    width: 400px;
+    height: auto;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 60%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius:20% ;
+    box-shadow: 1px 10px 10px 1rem green;
+}
+
+.sect2 h5 {
+    color: #ffffff8c;
+    font-size: 16px;
+}
+
+.sect2 h2 {
+    color: white;
+    margin-top: 1rem;
+}
+
+.sect2 p {
+    color: #ffffff8c;
+    font-size: 17px;
+    line-height: 2rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+}
+/* MAIN ends */
+
+/* FOOTER begins */
+.sect5 {
+    background-color: #010116f5;
+    padding: 5rem;
+    border-top: 1px solid #ffffff17;
+    border-bottom: 1px solid #ffffff17;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    white-space: nowrap;
+}
+
+.sect5 .div14 img {
+    width: 200px;
+    height: auto;
+}
+
+.sect5 p {
+    line-height: 2rem;
+    color: #ffffff7a;
+    padding: 0.2rem;
+}
+.sect5 h3 {
+    color: white;
+}
+
+.div15 p a, .div16 p a, .div17 p a {
+    text-decoration: none;
+    color: #ffffff7a;
+}
+
+.div15 p a:hover, .div16 p a:hover, .div17 p a:hover {
+    color: white;
+    font-size: 20.1px;
+    transition: 0.1s;
+}
+
+/* sect6 */
+
+.sect6 {
+    background-color: #010116f5;
+    color: #ffffff7a;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3rem;
+ }
+
+.sect6 .up  {
+ position: fixed;
+ bottom: 0;
+ right: 2%;
+ }
+
+ .sect6 .whatsapp {
+    position: fixed;
+    bottom: 0;
+    left: 1%;
+ }
+
+
+ @media screen and ( max-width: 1330px) {
+    /* Header begins */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #e7d6b7;
+    position: fixed;
+   top: -15%;
+   left: 0;
+   width: 100%;
+   padding: 2rem;
+   transition: 1s;
+}
+
+.fa-bars {
+    display: block;
+}
+
+header {
+    gap: 30rem;
+}
+
+.div2:hover nav {
+    top: 0;
+}
+
+.div3 {
+    display: none;
+}
+/* Header ends */
+
+/* Sect 2  */
+.sect2 {
+    height: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-self: center;
+    row-gap: 4rem ;
+}
+
+/* Footer begins*/
+.sect5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* Footer ends */  
+ }
+
+  /* MAX-WIDTH 880PX */
+@media screen and ( max-width: 880px) {
+    /* Footer begins */
+    header {
+        gap: 20rem;
+    }
+
+.sect2 img {
+    width: 350px;
+    height: auto;
+    }
+
+/* Footer ends  */
+/* Sect 5 */
+.sect5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+}
+ /* Footer ends */
+}
+
+
+/* MAX-WIDTH 645PX */
+@media screen and ( max-width: 645px) {
+    /* Header begins */
+      nav {
+      background-color: #141431f5;
+      top: -100%;
+      transition: 1.5s;
+      width: 100%;
+     } 
+  
+  nav ul li {
+      display: block;
+      padding: 0.6rem;
+      text-align: left;
+     }
+  
+  .fa-bars {
+      display: block;
+  }
+  
+  nav ul li a {
+      color: goldenrod;
+  }
+  
+  nav ul li a:hover {
+      color: white;
+  }
+  
+  header {
+      gap: 6rem;
+      background-color: #262650;
+  }
+  
+  .div2:hover nav {
+      top: 0%;
+  }
+  /* Header ends */
+
+  /* Sect 1 begins */
+.sect1 {
+    padding: 9rem;
+}
+/* Sect 1 ends */
+}
+
+
+/* MAX-WIDTH 440PX */
+@media screen and ( max-width: 440px) {
+    /* Header begins */
+header {
+    gap: 6rem;
+}
+
+.div1 img {
+    width: 130px;
+    height: auto;
+}
+/* Header ends */
+
+.sect1 {
+    padding: 8rem;
+    height: auto;
+}
+
+.sect1 h2 {
+    font-size: 30px;
+}
+
+.sect1 .div4 button {
+    height: 50px;
+    width: 120px;
+}
+/* Sect 1 ends */
+
+.sect2 img {
+    width: 300px;
+    height: auto;
+    }
+
+    /* FOOTER begins*/
+/* sect5 */
+.sect5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+ .sect5 .div14 img {
+    width: 100px;
+    height: auto;
+}
+
+.sect5 p {
+    line-height: 2rem;
+    padding: 0.2rem;
+    font-size: 16px;
+}
+
+ .sect5 h3 {
+    font-size: 20px;
+}
+
+/* sect6 */
+.sect6 {
+    font-size: 10px;
+    padding: 2rem;
+ }
+ /* FOOTER ends */
+}
